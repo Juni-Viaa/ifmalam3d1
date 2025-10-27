@@ -107,43 +107,7 @@ def show():
         - Export comparison tables
         - Save analysis results
         """)
-    
-    # Data Requirements
-    st.markdown("---")
-    st.markdown("### 📋 Persyaratan Data")
-    
-    with st.expander("📄 Format Data Excel", expanded=True):
-        st.markdown("""
-        File Excel harus berisi kolom-kolom berikut:
-        
-        **Fitur Numerik:**
-        - **F1, F2, F3, F4, F5, F6**: Feature variables
-        
-        **Pressure Variables:**
-        - **P1, P2**: Pressure measurements
-        
-        **Temperature Variables:**
-        - **T1, T2, T3, T4, T5**: Temperature readings
-        
-        **Load Variable:**
-        - **L1**: Load measurement
-        
-        **Special Features:**
-        - **SPF2, SPF3**: Special feature measurements
-        
-        **Target Variable:**
-        - **TARGET**: The value to be predicted (dependent variable)
-        
-        ---
-        
-        **Format Requirements:**
-        - All columns must be numeric
-        - No missing values in critical columns
-        - Data will be processed in batches of 48 rows
-        - Each batch's feature mean will be calculated
-        - Target value from the last row of each batch will be used
-        """)
-    
+
     # Process Flow
     st.markdown("---")
     st.markdown("### 🔄 Alur Proses Analisis")
